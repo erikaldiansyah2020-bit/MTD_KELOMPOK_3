@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Himpunan</title>
+<link rel="stylesheet" href="/style/kalulator.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-menu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="/pages/kalkulator.html" class="nav-link">Kalkulator</a>
+        <a href="/pages/video.html" class="nav-link">Video</a>
+        <a href="/pages/evaluasi.html" class="nav-link">Evaluasi</a>
+    </div>
+</nav>
+
+<h1 class="title">LET'S COUNT TOGETHER</h1>
+
+<div class="container">
+
+    <h2>
+        Kalkulator Himpunan dan <span>Diagram Venn</span>
+    </h2>
+
+    <label>Masukkan Himpunan A (pisahkan dengan koma)</label>
+    <input type="text" id="setA" placeholder="contoh: 1,2,3">
+
+    <label>Masukkan Himpunan B (pisahkan dengan koma)</label>
+    <input type="text" id="setB" placeholder="contoh: 2,3,4">
+
+    <label>Pilih Operasi Himpunan</label>
+    <select id="operation">
+        <option value="power">Himpunan Kuasa</option>
+        <option value="disjoint">Saling Lepas</option>
+        <option value="intersect">Berpotongan</option>
+        <option value="equal">Himpunan Sama</option>
+        <option value="venn">Diagram Venn</option>
+    </select>
+
+    <button onclick="calculate()">Hitung</button>
+
+    <div id="result" class="result-box"></div>
+
+    <div id="vennDiagram" class="venn-container" style="display:none;">
+        <div id="circleA" class="circle"></div>
+        <div id="circleB" class="circle"></div>
+    </div>
+
+</div>
+
+<script src="/scripts/kalkulator.js"></script>
+</body>
+</html>

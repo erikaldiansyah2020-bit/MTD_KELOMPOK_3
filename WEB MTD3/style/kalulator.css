@@ -1,0 +1,145 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #e9f3ff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #1c3557;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #ffffffcc;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    padding: 15px 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 18px;
+    border: 1px solid #d4e6ff;
+    box-shadow:
+        0 0 10px rgba(150, 190, 255, 0.45),
+        0 12px 35px rgba(0, 75, 160, 0.12);
+}
+
+/* TITLE */
+h2 {
+    color: #1c4f91;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+/* LABEL */
+label {
+    font-weight: 600;
+    display: block;
+    margin: 14px 0 8px;
+    color: #27496d;
+}
+
+/* INPUT */
+input,
+select,
+button {
+    width: 100%;
+    padding: 13px 16px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    outline: none;
+}
+
+input,
+select {
+    border: 1px solid #b8d4ff;
+    background: #f8fbff;
+}
+
+input:focus,
+select:focus {
+    border-color: #4da3ff;
+    box-shadow: 0 0 10px rgba(77, 163, 255, 0.55);
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(145deg, #4da3ff, #1e7ee6);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #5eb0ff, #257feb);
+}
+
+/* RESULT */
+.result-box {
+    background: #f0f7ff;
+    padding: 20px;
+    border-left: 6px solid #1e7ee6;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* DIAGRAM VENN */
+.venn-container {
+    position: relative;
+    width: 280px;
+    height: 170px;
+    margin: 40px auto;
+}
+
+.circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0.48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circleA {
+    background: #79b4ff;
+    left: 0;
+}
+
+#circleB {
+    background: #b0d6ff;
+    right: 0;
+}

@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+}
+
+body {
+    background: #f5f7ff;
+    color: #222;
+}
+
+/* ================= HEADER ================= */
+#head {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #9bc9ff, #dbe8ff);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+#head h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#head h1 span {
+    color: #007bff;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #444;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #ffffffcc;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    padding: 15px 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+/* ================= SECTION TITLE ================= */
+.section-title {
+    text-align: center;
+    margin: 60px 0 30px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section-title span {
+    color: #007bff;
+}
+
+/* ================= CARD ================= */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    width: 320px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+.card-info h4 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.galcoll {
+    color: #007bff;
+    font-weight: 700;
+}
+
+.card-info p {
+    color: #444;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+/* ================= VIDEO ================= */
+.video-card {
+    width: 320px; /* samakan dengan card */
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* rasio 16:9 */
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 10px 0;
+    background: #000;
+}
+
+.video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    pointer-events: auto;
+    display: block;
+}
+
+/* ================= BIODATA ================= */
+.biodata-card {
+    width: 420px;
+}
+
+.biodata-info strong {
+    color: #007bff;
+}
+
+/* ================= BUTTON ================= */
+.btn-readmore {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.btn-readmore:hover {
+    background: #005dcc;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 700px) {
+    .card,
+    .video-card {
+        width: 90%;
+    }
+}
